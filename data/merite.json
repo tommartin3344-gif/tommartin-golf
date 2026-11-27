@@ -1,0 +1,264 @@
+{
+  "source": "https://pages.ffgolf.org/merite/amateurs/messieurs",
+  "updatedAt": "2026-11-26T03:30:00.000Z",
+  "current": {
+    "editionId": "202611",
+    "editionTitle": "Amateur Messieurs Novembre 2026",
+    "periode": "01/11/2025 - 31/10/2026",
+    "prochaineParution": "03/12/2026",
+    "rank": 329,
+    "rankPrecedent": 333,
+    "rankAnneePrecedente": 951,
+    "meilleurePlace": 328,
+    "nbClasses": 1119,
+    "index": -3.2,
+    "victoires": 0,
+    "moySss": 4.22,
+    "moySss6": 2.3,
+    "tournois": 15,
+    "tournoisMarques": 11,
+    "total": 5.54,
+    "golf": "GOLF DE LA PREE - LA ROCHELLE"
+  },
+  "history": [
+    {
+      "id": "202512",
+      "rank": 951,
+      "nb": 1149
+    },
+    {
+      "id": "202602",
+      "rank": 939,
+      "nb": 1135
+    },
+    {
+      "id": "202603",
+      "rank": 936,
+      "nb": 1133
+    },
+    {
+      "id": "202604",
+      "rank": 839,
+      "nb": 1128
+    },
+    {
+      "id": "202605",
+      "rank": 705,
+      "nb": 1139
+    },
+    {
+      "id": "202606",
+      "rank": 782,
+      "nb": 1169
+    },
+    {
+      "id": "202607",
+      "rank": 750,
+      "nb": 1102
+    },
+    {
+      "id": "202608",
+      "rank": 499,
+      "nb": 1097
+    },
+    {
+      "id": "202609",
+      "rank": 418,
+      "nb": 1098
+    },
+    {
+      "id": "202610",
+      "rank": 333,
+      "nb": 1110
+    },
+    {
+      "id": "202611",
+      "rank": 329,
+      "nb": 1119
+    }
+  ],
+  "results": [
+    {
+      "date": "26/09/2026",
+      "nom": "Grand Prix de La Prée La Rochelle",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/5df59abb64b80cd67fe314215eab3d2b/2501392237",
+      "place": "2ème",
+      "tours": [
+        72,
+        69
+      ],
+      "points": 16.0,
+      "vsSss": -3.2
+    },
+    {
+      "date": "19/09/2026",
+      "nom": "Grand Prix de Touraine",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/6819913124329f2be4dec63e839ac223/2601406844",
+      "place": "4ème ex",
+      "tours": [
+        72,
+        75
+      ],
+      "points": 8.0,
+      "vsSss": 2.4
+    },
+    {
+      "date": "12/09/2026",
+      "nom": "Grand Prix de Lacanau Ardilouse",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/953e297c3fa2535501121a31c19fe0e8/2601416706",
+      "place": "20ème ex",
+      "tours": [
+        74,
+        85
+      ],
+      "points": 3.14,
+      "vsSss": 6.2
+    },
+    {
+      "date": "05/09/2026",
+      "nom": "Grand Prix de Seilh",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/b1d7d08db682fd737787ef2449d787cc/2601467300",
+      "place": "9ème ex",
+      "tours": [
+        75,
+        78
+      ],
+      "points": 5.0,
+      "vsSss": 3.5
+    },
+    {
+      "date": "01/08/2026",
+      "nom": "33e Grand Prix du Cognac",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/1cc65cb37f215737facf52f5f4da8ef8/2601451501",
+      "place": "5ème ex",
+      "tours": [
+        72,
+        71
+      ],
+      "points": 10.0,
+      "vsSss": -2.0
+    },
+    {
+      "date": "18/07/2026",
+      "nom": "Grand Prix des Tumulus",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/e57431cc9340a6c9d3d2afbeb2295e48/2601450545",
+      "place": "2ème",
+      "tours": [
+        68,
+        72
+      ],
+      "points": 16.0,
+      "vsSss": 1.8
+    },
+    {
+      "date": "04/07/2026",
+      "nom": "Grand Prix de Royan",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/f496313034e2f1d24f3528f9af37651d/2601443629",
+      "place": "18ème ex",
+      "tours": [
+        72,
+        83
+      ],
+      "points": 6.6,
+      "vsSss": 5.3
+    },
+    {
+      "date": "28/05/2026",
+      "nom": "Championnat de France par équipes, 3e division",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/572da5febaee10b7e85bab9c6205c587/2601430776",
+      "place": "10ème",
+      "tours": [
+        72,
+        72
+      ],
+      "points": 8.0,
+      "vsSss": -1.2,
+      "golf": "moliets"
+    },
+    {
+      "date": "16/05/2026",
+      "nom": "Grand Prix de Périgueux",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/010c1eb639cf4fa0e33f1479f5f99077/2601420770",
+      "place": "47ème ex",
+      "tours": [
+        83,
+        78
+      ],
+      "points": null,
+      "vsSss": 7.9
+    },
+    {
+      "date": "01/05/2026",
+      "nom": "Grand Prix de Pau Artiguelouve",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/ebc0ea3e26c235e0a7b52c23b44ae115/2601421981",
+      "place": "37ème ex",
+      "tours": [
+        78,
+        72,
+        75
+      ],
+      "points": null,
+      "vsSss": 4.7
+    },
+    {
+      "date": "24/04/2026",
+      "nom": "Championnat régional par équipes, 1re division (Haut-Poitou)",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/a03ee6ea6f52de0dd88b65a449cdc06e/2601403983",
+      "place": "56ème ex",
+      "tours": [
+        80,
+        85
+      ],
+      "points": null,
+      "vsSss": 8.5
+    },
+    {
+      "date": "18/04/2026",
+      "nom": "Grand Prix de la Marterie",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/8f81c295635c455ffe41a8d72723f693/2601424467",
+      "place": "12ème ex",
+      "tours": [
+        78,
+        80
+      ],
+      "points": 3.0,
+      "vsSss": 6.9
+    },
+    {
+      "date": "04/04/2026",
+      "nom": "Grand Prix Fort Boyard (Rochefort Océan)",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/3598bbce4332776d51b0f85572eaeea7/2601409690",
+      "place": "12ème ex",
+      "tours": [
+        85,
+        83
+      ],
+      "points": 3.0,
+      "vsSss": 9.5
+    },
+    {
+      "date": "28/03/2026",
+      "nom": "Grand Prix d'Arcachon",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/be0657e646966a585c90b337488b4495/2601407583",
+      "place": "24ème ex",
+      "tours": [
+        79,
+        78
+      ],
+      "points": 4.4,
+      "vsSss": 5.9
+    },
+    {
+      "date": "07/03/2026",
+      "nom": "Grand Prix de Casteljaloux",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/85d0240d8b222df569a55f57b93696bd/2601408180",
+      "place": "47ème ex",
+      "tours": [
+        81,
+        77
+      ],
+      "points": null,
+      "vsSss": 6.9
+    }
+  ]
+}

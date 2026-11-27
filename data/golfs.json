@@ -1,0 +1,125 @@
+{
+  "_aide": "Un golf par ligne. 'motif' est cherché dans le nom de la compétition (data/merite.json). Si le nom ne dit pas où elle s'est jouée, ajoute \"golf\": \"<id>\" à ce résultat dans merite.json (il est conservé aux mises à jour). 'logo' : fichier carré dans assets/img/golfs/. Sans logo, le site affiche le sigle dans un rond.",
+  "golfs": [
+    {
+      "id": "rochefort",
+      "motif": "Rochefort|Fort Boyard",
+      "nom": "Golf Bluegreen Rochefort Océan",
+      "ville": "Saint-Laurent-de-la-Prée",
+      "sigle": "RO",
+      "logo": "assets/img/golfs/rochefort.webp"
+    },
+    {
+      "id": "la-pree",
+      "motif": "La Pr[ée]e",
+      "nom": "Golf de La Prée La Rochelle",
+      "ville": "Marsilly",
+      "sigle": "LP",
+      "logo": "assets/img/golfs/la-pree.webp"
+    },
+    {
+      "id": "touraine",
+      "motif": "Touraine",
+      "nom": "Golf de Touraine",
+      "ville": "Ballan-Miré",
+      "sigle": "GT",
+      "logo": "assets/img/golfs/touraine.webp"
+    },
+    {
+      "id": "lacanau",
+      "motif": "Lacanau|Ardilouse",
+      "nom": "UGOLF Lacanau, L'Ardilouse",
+      "ville": "Lacanau",
+      "sigle": "LA",
+      "logo": "assets/img/golfs/lacanau.webp"
+    },
+    {
+      "id": "seilh",
+      "motif": "Seilh",
+      "nom": "UGOLF Toulouse Seilh",
+      "ville": "Seilh",
+      "sigle": "TS",
+      "logo": "assets/img/golfs/seilh.webp"
+    },
+    {
+      "id": "cognac",
+      "motif": "Cognac",
+      "nom": "Golf du Cognac",
+      "ville": "Saint-Brice",
+      "sigle": "CO",
+      "logo": "assets/img/golfs/cognac.webp"
+    },
+    {
+      "id": "tumulus",
+      "motif": "Tumulus",
+      "nom": "Golf de Tarbes Les Tumulus",
+      "ville": "Laloubère",
+      "sigle": "TT",
+      "logo": "assets/img/golfs/tumulus.webp"
+    },
+    {
+      "id": "royan",
+      "motif": "Royan",
+      "nom": "Golf de Royan",
+      "ville": "Saint-Palais-sur-Mer",
+      "sigle": "GR",
+      "logo": "assets/img/golfs/royan.webp"
+    },
+    {
+      "id": "perigueux",
+      "motif": "P[ée]rigueux",
+      "nom": "Golf Club de Périgueux",
+      "ville": "Marsac-sur-l'Isle",
+      "sigle": "GP",
+      "logo": "assets/img/golfs/perigueux.webp"
+    },
+    {
+      "id": "pau",
+      "motif": "Artiguelouve",
+      "nom": "Golf Bluegreen Pau-Artiguelouve",
+      "ville": "Artiguelouve",
+      "sigle": "PA",
+      "logo": "assets/img/golfs/pau.webp"
+    },
+    {
+      "id": "haut-poitou",
+      "motif": "Haut-Poitou",
+      "nom": "Golf du Haut-Poitou",
+      "ville": "Beaumont Saint-Cyr",
+      "sigle": "HP",
+      "logo": "assets/img/golfs/haut-poitou.webp"
+    },
+    {
+      "id": "marterie",
+      "motif": "Marterie",
+      "nom": "Golf de la Marterie",
+      "ville": "Saint-Félix-de-Reilhac",
+      "sigle": "LM",
+      "logo": "assets/img/golfs/marterie.webp"
+    },
+    {
+      "id": "arcachon",
+      "motif": "Arcachon",
+      "nom": "Golf International d'Arcachon",
+      "ville": "La Teste-de-Buch",
+      "sigle": "GA",
+      "logo": "assets/img/golfs/arcachon.webp"
+    },
+    {
+      "id": "casteljaloux",
+      "motif": "Casteljaloux",
+      "nom": "Golf de Casteljaloux",
+      "ville": "Casteljaloux",
+      "sigle": "GC",
+      "logo": "assets/img/golfs/casteljaloux.webp"
+    },
+    {
+      "id": "moliets",
+      "motif": "Moliets",
+      "nom": "Golf de Moliets",
+      "ville": "Moliets-et-Maa",
+      "sigle": "GM",
+      "logo": "assets/img/golfs/moliets.webp"
+    }
+  ]
+}

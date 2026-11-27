@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tommartin-golf.pages.dev/sitemap.xml

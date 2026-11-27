@@ -1,0 +1,4 @@
+{
+  "aide": "Ajouter une photo ou une vidéo : { \"fichier\": \"assets/media/nom.jpg\", \"legende\": \"Grand Prix de La Prée, septembre 2026\" }. Vidéo : fichier .mp4 (moins de 15 Mo) + \"affiche\": image d'aperçu. La section s'affiche dès qu'il y a au moins un média.",
+  "medias": []
+}

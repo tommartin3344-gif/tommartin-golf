@@ -1,0 +1,11 @@
+{
+  "aide": "Ajouter un partenaire : { \"nom\": \"Entreprise\", \"logo\": \"assets/img/partenaires/entreprise.svg\", \"url\": \"https://...\" }. La rubrique « Ils me soutiennent » s'affiche dès qu'il y a au moins un partenaire.",
+  "partenaires": [
+    {
+      "nom": "SICC — Sécurité incendie",
+      "logo": "assets/img/partenaires/sicc.png",
+      "url": "https://www.sicc.fr",
+      "statut": "accord à confirmer avant mise en ligne"
+    }
+  ]
+}

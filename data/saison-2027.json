@@ -1,0 +1,8 @@
+{
+  "intro": "Une quinzaine de Grands Prix en Nouvelle-Aquitaine et en Occitanie, et le Championnat de France par équipes en 2e division avec le Golf de La Prée La Rochelle.",
+  "vide": "Le calendrier complet sera publié en janvier 2027.",
+  "items": [
+    { "date": "", "nom": "", "niveau": "" }
+  ],
+  "aide": "Pour ajouter une compétition : copier une ligne dans items, ex. { \"date\": \"6-7 mars\", \"nom\": \"Grand Prix de Casteljaloux\", \"niveau\": \"National\" }. Les lignes sans nom sont ignorées."
+}
