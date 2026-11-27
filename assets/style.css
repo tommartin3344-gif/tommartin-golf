@@ -61,7 +61,7 @@ p{margin:0 0 1em}
 .btn-ghost:hover{background:var(--nuit);color:var(--blanc)}
 
 /* Hero */
-.hero{max-width:var(--page);margin:0 auto;padding:clamp(1.5rem,5vw,4rem) var(--gout) 2rem;display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:center}
+.hero{max-width:var(--page);margin:0 auto;padding:clamp(1.5rem,5vw,4rem) var(--gout) 2rem;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:center}
 .hero-who{font-family:var(--f-titre);font-weight:500;color:var(--texte-2);margin-bottom:1.25rem}
 .hero h1{font-weight:900;font-stretch:125%;line-height:.9;margin:0 0 1rem;display:flex;flex-direction:column}
 .h-to{font-size:clamp(4.5rem,11vw,8.5rem);color:var(--nuit)}
@@ -217,3 +217,8 @@ p{margin:0 0 1em}
 .next h3{color:var(--nuit)}
 .next p{color:var(--texte-2);max-width:60ch;margin:.4rem 0 0}
 .trajectory figcaption a{color:inherit;text-decoration-color:var(--orange,#f07a22)}
+
+/* Photo en haut de page, courbe dans les résultats */
+.hero-photo{max-width:460px;width:100%;justify-self:end}
+@media (max-width:900px){.hero-photo{justify-self:start;max-width:none;aspect-ratio:4/3}.hero-photo img{object-position:50% 30%}}
+.traj-results{margin:1.5rem 0 1.75rem}

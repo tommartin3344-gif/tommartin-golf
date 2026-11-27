@@ -46,11 +46,8 @@
           <a class="btn btn-ghost" href="#resultats">Voir les résultats</a>
         </div>
       </div>
-      <figure class="trajectory" aria-labelledby="traj-cap">
-        <svg id="traj" viewBox="0 0 800 360" role="img" aria-label="Évolution du classement au Mérite National Amateur"></svg>
-        <figcaption id="traj-cap">
-          Source : <a href="https://pages.ffgolf.org/merite/amateurs/messieurs" rel="noopener" target="_blank">ffgolf, Mérite National Amateur</a>
-        </figcaption>
+      <figure class="photo hero-photo" data-photo>
+        <img src="assets/img/portrait.jpg" alt="Tom Martin sur un green, à côté du drapeau" width="800" height="1000" fetchpriority="high">
       </figure>
     </section>
 
@@ -83,7 +80,7 @@
         </p>
       </div>
       <figure class="photo" data-photo>
-        <img src="assets/img/portrait.jpg" alt="Tom Martin sur un parcours de golf" loading="lazy" width="800" height="1000">
+        <img src="assets/img/chantier.jpg" alt="Tom Martin sur un chantier, en casque, gilet haute visibilité et lunettes de protection" loading="lazy" width="960" height="1200">
       </figure>
     </section>
 
@@ -106,6 +103,12 @@
     <!-- RÉSULTATS -->
     <section id="resultats" class="section" aria-labelledby="resultats-title">
       <h2 id="resultats-title">Mes résultats</h2>
+      <figure class="trajectory traj-results" aria-labelledby="traj-cap">
+        <svg id="traj" viewBox="0 0 800 360" role="img" aria-label="Évolution du classement au Mérite National Amateur"></svg>
+        <figcaption id="traj-cap">
+          Source : <a href="https://pages.ffgolf.org/merite/amateurs/messieurs" rel="noopener" target="_blank">ffgolf, Mérite National Amateur</a>
+        </figcaption>
+      </figure>
       <div class="year-tabs" id="year-tabs" role="tablist" aria-label="Choisir une saison"></div>
       <div class="scorecard-wrap">
         <table class="scorecard" id="scorecard">
