@@ -32,6 +32,30 @@
     .then(renderMerite)
     .catch(() => {});
 
+  // Alerte e-mail : chaque demande enregistrée est aussi envoyée à Tom par FormSubmit (gratuit, sans compte).
+  // Le premier envoi déclenche un e-mail d'activation à confirmer une seule fois.
+  function envoyerAlerte(p) {
+    const mail = cfg.CONTACT_EMAIL || "tommartin3344@gmail.com";
+    const corps = {
+      _subject: `Nouvelle demande sur ton site : ${p.nom}${p.entreprise ? " (" + p.entreprise + ")" : ""}`,
+      _template: "box",
+      _captcha: "false",
+      _replyto: p.email,
+      "Objet": p.formule || "Non précisé",
+      "Nom": p.nom,
+      "Entreprise": p.entreprise || "-",
+      "E-mail": p.email,
+      "Téléphone": p.telephone || "-",
+      "Message": p.message || "-",
+      "Suivi": "Réponds directement à cet e-mail pour écrire à la personne. La demande est aussi dans Supabase > Table Editor > demandes_partenariat."
+    };
+    fetch(`https://formsubmit.co/ajax/${mail}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify(corps)
+    }).catch(() => {});
+  }
+
   function renderMerite(d) {
     const c = d.current;
     const hist = (d.history || []).slice().sort((a, b) => a.id.localeCompare(b.id));
@@ -313,6 +337,7 @@
           body: JSON.stringify(payload)
         });
         if (!res.ok) throw new Error(String(res.status));
+        envoyerAlerte(payload);
         form.reset();
         say("Message envoyé. Je vous réponds sous 48 heures.", "ok");
       } catch (err) {

@@ -26,3 +26,9 @@ create policy "Le site peut déposer une demande"
 
 revoke select, update, delete on public.demandes_partenariat from anon;
 grant insert on public.demandes_partenariat to anon;
+
+-- Petite fonction appelée deux fois par semaine par GitHub (.github/workflows/supabase-eveil.yml)
+-- pour que le projet gratuit ne se mette pas en pause faute d'activité.
+create or replace function public.ping() returns integer language sql stable as $$ select 1 $$;
+revoke execute on function public.ping() from public;
+grant execute on function public.ping() to anon;
