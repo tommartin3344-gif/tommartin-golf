@@ -120,6 +120,94 @@
       "ville": "Moliets-et-Maa",
       "sigle": "GM",
       "logo": "assets/img/golfs/moliets.webp"
+    },
+    {
+      "id": "albret",
+      "motif": "Albret",
+      "nom": "Albret Golf Expérience",
+      "ville": "Barbaste",
+      "sigle": "AG",
+      "logo": "assets/img/golfs/albret.webp"
+    },
+    {
+      "id": "niort",
+      "motif": "Niort",
+      "nom": "Golf de Niort",
+      "ville": "Niort",
+      "sigle": "GN",
+      "logo": "assets/img/golfs/niort.webp"
+    },
+    {
+      "id": "petit-chene",
+      "motif": "Petit Ch[êe]ne",
+      "nom": "Golf du Petit Chêne",
+      "ville": "Mazières-en-Gâtine",
+      "sigle": "PC",
+      "logo": "assets/img/golfs/petit-chene.webp"
+    },
+    {
+      "id": "la-baule",
+      "motif": "La Baule",
+      "nom": "Golf International Barrière La Baule",
+      "ville": "Saint-André-des-Eaux",
+      "sigle": "LB",
+      "logo": null
+    },
+    {
+      "id": "seignosse",
+      "motif": "Seignosse",
+      "nom": "Golf de Seignosse",
+      "ville": "Seignosse",
+      "sigle": "GS",
+      "logo": "assets/img/golfs/seignosse.webp"
+    },
+    {
+      "id": "gujan",
+      "motif": "Gujan",
+      "nom": "Golf Bluegreen Gujan-Mestras",
+      "ville": "Gujan-Mestras",
+      "sigle": "GM",
+      "logo": "assets/img/golfs/gujan.webp"
+    },
+    {
+      "id": "villenave",
+      "motif": "Villenave",
+      "nom": "Golf de Villenave d'Ornon",
+      "ville": "Villenave-d'Ornon",
+      "sigle": "GV",
+      "logo": "assets/img/golfs/villenave.webp"
+    },
+    {
+      "id": "bauge",
+      "motif": "Baug[ée]",
+      "nom": "Golf de Baugé-Pontigné",
+      "ville": "Baugé-en-Anjou",
+      "sigle": "GB",
+      "logo": "assets/img/golfs/bauge.webp"
+    },
+    {
+      "id": "augerville",
+      "motif": "Augerville",
+      "nom": "Golf d'Augerville",
+      "ville": "Augerville-la-Rivière",
+      "sigle": "GA",
+      "logo": "assets/img/golfs/augerville.webp"
+    },
+    {
+      "id": "chateau-larc",
+      "motif": "Ch[âa]teau l'Arc",
+      "nom": "Golf de Château l'Arc",
+      "ville": "Fuveau",
+      "sigle": "CA",
+      "logo": "assets/img/golfs/chateau-larc.webp"
+    },
+    {
+      "id": "vigiers",
+      "motif": "Vigiers",
+      "nom": "Golf du Château des Vigiers",
+      "ville": "Monestier",
+      "sigle": "LV",
+      "logo": null
     }
   ]
 }

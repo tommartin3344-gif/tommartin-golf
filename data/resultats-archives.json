@@ -1,0 +1,270 @@
+{
+  "aide": "Résultats des saisons passées (source : Mérite National Amateur, ffgolf). La mise à jour du 10 du mois y ajoute automatiquement les résultats qui sortent de la fenêtre de 12 mois. 'golf' (facultatif) force le golf affiché, voir data/golfs.json.",
+  "resultats": [
+    {
+      "date": "31/10/2025",
+      "nom": "Grand Prix Albret Golf Expérience, Trophée Bernard Betuing",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/0fd9277ee2db99cf0a0e5acaa0b701aa/2501305965",
+      "place": "21ème ex",
+      "tours": [
+        75,
+        78,
+        76
+      ],
+      "golf": "albret"
+    },
+    {
+      "date": "22/05/2025",
+      "nom": "Championnat de France par équipes, 3e division",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/572da5febaee10b7e85bab9c6205c587/2501335703",
+      "place": "21ème ex",
+      "tours": [
+        74,
+        74
+      ],
+      "golf": "pau"
+    },
+    {
+      "date": "10/05/2025",
+      "nom": "Grand Prix de Seilh",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/b1d7d08db682fd737787ef2449d787cc/2501328651",
+      "place": "26ème ex",
+      "tours": [
+        82,
+        80
+      ]
+    },
+    {
+      "date": "02/05/2025",
+      "nom": "Grand Prix de Pau Artiguelouve",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/ebc0ea3e26c235e0a7b52c23b44ae115/2501326962",
+      "place": "19ème ex",
+      "tours": [
+        73,
+        76
+      ]
+    },
+    {
+      "date": "04/04/2025",
+      "nom": "Championnat régional par équipes, 1re division (Les Vigiers)",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/a03ee6ea6f52de0dd88b65a449cdc06e/2501307260",
+      "place": "64ème ex",
+      "tours": [
+        74,
+        77
+      ]
+    },
+    {
+      "date": "29/03/2025",
+      "nom": "Grand Prix de Baugé",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/46ed0a8c7ff107fda7f5709cb78c6f94/2501318899",
+      "place": "33ème ex",
+      "tours": [
+        83,
+        80
+      ]
+    },
+    {
+      "date": "15/03/2025",
+      "nom": "Grand Prix d'Augerville",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/3503239a717d840dcb6cbaaf89cc3225/2501315025",
+      "place": "48ème ex",
+      "tours": [
+        92,
+        80
+      ]
+    },
+    {
+      "date": "07/03/2025",
+      "nom": "Grand Prix de Château l'Arc, Trophée Guy Pastor",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/20732984f24c335259110317a8faf40f/2501311066",
+      "place": "56ème ex",
+      "tours": [
+        83,
+        83
+      ]
+    },
+    {
+      "date": "01/11/2024",
+      "nom": "Grand Prix Albret Golf Expérience, Trophée Bernard Betuing",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/0fd9277ee2db99cf0a0e5acaa0b701aa/2401271138",
+      "place": "17ème ex",
+      "tours": [
+        74,
+        76,
+        75
+      ],
+      "golf": "albret"
+    },
+    {
+      "date": "05/10/2024",
+      "nom": "26e Grand Prix de Niort",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/099c178425526d323639f14bd3422e25/2401266469",
+      "place": "2ème",
+      "tours": [
+        69
+      ]
+    },
+    {
+      "date": "21/09/2024",
+      "nom": "15e Grand Prix de Touraine",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/6819913124329f2be4dec63e839ac223/2301128612",
+      "place": "22ème ex",
+      "tours": [
+        75,
+        80
+      ]
+    },
+    {
+      "date": "14/09/2024",
+      "nom": "Grand Prix de Lacanau",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/953e297c3fa2535501121a31c19fe0e8/2401256462",
+      "place": "11ème ex",
+      "tours": [
+        73,
+        81
+      ]
+    },
+    {
+      "date": "07/09/2024",
+      "nom": "Grand Prix du Golf du Petit Chêne",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/9aa26e2ca86d684631ac2c5cfe82f1b0/2401257040",
+      "place": "9ème ex",
+      "tours": [
+        76,
+        81
+      ]
+    },
+    {
+      "date": "24/08/2024",
+      "nom": "Grand Prix de La Prée La Rochelle",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/5df59abb64b80cd67fe314215eab3d2b/2401151779",
+      "place": "6ème",
+      "tours": [
+        77,
+        78
+      ]
+    },
+    {
+      "date": "03/08/2024",
+      "nom": "31e Grand Prix du Cognac",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/1cc65cb37f215737facf52f5f4da8ef8/2401212483",
+      "place": "26ème ex",
+      "tours": [
+        79,
+        80
+      ]
+    },
+    {
+      "date": "26/07/2024",
+      "nom": "Grand Prix de La Baule",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/756465e70e31bd1354b2126627e9cd2e/2401214251",
+      "place": "59ème",
+      "tours": [
+        82,
+        77
+      ]
+    },
+    {
+      "date": "06/07/2024",
+      "nom": "Grand Prix de la Ville de Royan",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/f496313034e2f1d24f3528f9af37651d/2401200191",
+      "place": "19ème ex",
+      "tours": [
+        80,
+        76
+      ]
+    },
+    {
+      "date": "28/06/2024",
+      "nom": "Grand Prix de Seignosse",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/548a93d6236aabb6174620a1e91e5b58/2401223176",
+      "place": "56ème ex",
+      "tours": [
+        83,
+        81
+      ]
+    },
+    {
+      "date": "15/06/2024",
+      "nom": "Grand Prix de Gujan",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/5dc0c04dd2b8b57f838c0d8ff341b0f2/2401213988",
+      "place": "23ème ex",
+      "tours": [
+        81,
+        79
+      ]
+    },
+    {
+      "date": "01/06/2024",
+      "nom": "Grand Prix d'Arcachon",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/be0657e646966a585c90b337488b4495/2401145517",
+      "place": "18ème ex",
+      "tours": [
+        80,
+        71
+      ]
+    },
+    {
+      "date": "23/05/2024",
+      "nom": "Championnat de France par équipes, 3e division",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/572da5febaee10b7e85bab9c6205c587/2401155258",
+      "place": "29ème ex",
+      "tours": [
+        79,
+        74
+      ],
+      "golf": "cognac"
+    },
+    {
+      "date": "04/05/2024",
+      "nom": "Grand Prix de Villenave d'Ornon",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/59410902d4cd8d25dc9c122a245ab26f/2401193373",
+      "place": "5ème",
+      "tours": [
+        77,
+        78
+      ]
+    },
+    {
+      "date": "27/04/2024",
+      "nom": "Grand Prix de Seilh",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/b1d7d08db682fd737787ef2449d787cc/2401184554",
+      "place": "41ème ex",
+      "tours": [
+        88,
+        80
+      ]
+    },
+    {
+      "date": "20/04/2024",
+      "nom": "Grand Prix de la Marterie",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/8f81c295635c455ffe41a8d72723f693/2401181079",
+      "place": "27ème ex",
+      "tours": [
+        82,
+        83
+      ]
+    },
+    {
+      "date": "30/03/2024",
+      "nom": "Grand Prix de Baugé",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/46ed0a8c7ff107fda7f5709cb78c6f94/2401171369",
+      "place": "19ème ex",
+      "tours": [
+        76,
+        81
+      ]
+    },
+    {
+      "date": "16/03/2024",
+      "nom": "Grand Prix d'Augerville",
+      "url": "https://pages.ffgolf.org/resultats/resultats-details/3503239a717d840dcb6cbaaf89cc3225/2301122466",
+      "place": "20ème ex",
+      "tours": [
+        81,
+        81
+      ]
+    }
+  ]
+}

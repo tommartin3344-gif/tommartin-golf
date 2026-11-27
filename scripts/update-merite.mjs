@@ -9,6 +9,7 @@ import path from "node:path";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = path.join(ROOT, "data", "merite.json");
+const ARCHIVE = path.join(ROOT, "data", "resultats-archives.json");
 const PAGE = "https://pages.ffgolf.org/merite/amateurs/messieurs";
 const PLAYER = { nom: "MARTIN", prenom: "Tom", golf: /PREE/i }; // nom, prénom, club
 
@@ -113,6 +114,22 @@ async function main() {
     const old = prevByDate.get(r.date + "|" + r.tours.join("-"));
     return old ? { ...r, nom: old.nom, ...(old.golf ? { golf: old.golf } : {}) } : r; // garde les noms et golfs corrigés à la main
   });
+
+  // Les résultats qui sortent de la fenêtre de 12 mois sont gardés dans data/resultats-archives.json
+  const key = (r) => r.date + "|" + (r.tours || []).join("-");
+  const inWindow = new Set(mergedResults.map(key));
+  const dropped = (prev.results || []).filter((r) => !inWindow.has(key(r)));
+  if (dropped.length) {
+    let arch = { resultats: [] };
+    try { arch = JSON.parse(await readFile(ARCHIVE, "utf8")); } catch {}
+    const known = new Set((arch.resultats || []).map(key));
+    const add = dropped.filter((r) => !known.has(key(r)));
+    if (add.length) {
+      arch.resultats = [...add, ...(arch.resultats || [])];
+      await writeFile(ARCHIVE, JSON.stringify(arch, null, 2) + "\n");
+      console.log(`${add.length} résultat(s) archivé(s).`);
+    }
+  }
 
   const history = (prev.history || []).filter((h) => h.id !== editionId);
   history.push({ id: editionId, rank: Number(me.RANK), nb: num(data.nb) });

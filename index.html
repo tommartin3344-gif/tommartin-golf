@@ -7,7 +7,7 @@
   <meta name="description" content="Tom Martin, golfeur amateur de compétition, Golf de La Prée La Rochelle. Classement au Mérite National Amateur, résultats, saison 2027 et contact.">
   <link rel="canonical" href="https://tommartin-golf.pages.dev/">
   <meta property="og:title" content="Tom Martin — Golfeur amateur de compétition">
-  <meta property="og:description" content="951e → 329e au Mérite National Amateur en une saison. Résultats, parcours et saison 2027.">
+  <meta property="og:description" content="329e au Mérite National Amateur, index −3,2. Résultats, parcours et saison 2027.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tommartin-golf.pages.dev/">
   <meta property="og:image" content="https://tommartin-golf.pages.dev/assets/img/og.jpg">
@@ -36,7 +36,6 @@
       <div class="hero-text">
         <p class="hero-who">Golfeur amateur de compétition au Golf de La Prée La Rochelle</p>
         <h1 id="hero-title">
-          <span class="h-from" data-merite="firstRank">951e</span>
           <span class="h-to" data-merite="rank">329e</span>
         </h1>
         <p class="hero-lede">
@@ -64,7 +63,6 @@
       <dl>
         <div><dt>Mérite National Amateur</dt><dd data-merite="rank">329e</dd></div>
         <div><dt>Index</dt><dd data-merite="index">−3,2</dd></div>
-        <div><dt>Moyenne vs SSS, 6 derniers mois</dt><dd data-merite="moy6">+2,30</dd></div>
         <div><dt>Tournois sur 12 mois</dt><dd data-merite="tournois">15</dd></div>
         <div><dt>Équipe 2027</dt><dd>2e division</dd></div>
       </dl>
@@ -96,37 +94,34 @@
 
     <!-- VALEURS -->
     <section class="section" aria-labelledby="valeurs-title">
-      <h2 id="valeurs-title">Quatre valeurs, quatre preuves</h2>
+      <h2 id="valeurs-title">Mes valeurs</h2>
       <div class="values">
         <article>
           <h3>Rigueur</h3>
-          <p>Quinze Grands Prix planifiés, réservés et budgétés un an à l'avance.</p>
         </article>
         <article>
           <h3>Concentration</h3>
-          <p>Cinq heures de jeu, deux jours d'affilée. 72-69 au Grand Prix de La Prée en septembre.</p>
         </article>
         <article>
           <h3>Stratégie</h3>
-          <p>Choisir le coup juste, pas le coup spectaculaire. Une moyenne par rapport au SSS presque divisée par deux sur les six derniers mois.</p>
         </article>
         <article>
           <h3>Persévérance</h3>
-          <p>De la 951e à la 329e place nationale en une saison, mois après mois.</p>
         </article>
       </div>
     </section>
 
     <!-- RÉSULTATS -->
     <section id="resultats" class="section" aria-labelledby="resultats-title">
-      <h2 id="resultats-title">Carte de score des 12 derniers mois</h2>
+      <h2 id="resultats-title">Mes résultats</h2>
       <p class="section-lede">
         Toutes les compétitions comptant pour le Mérite National Amateur, avec les scores de chaque tour.
         Les places entourées sont les tops 5.
       </p>
+      <div class="year-tabs" id="year-tabs" role="tablist" aria-label="Choisir une saison"></div>
       <div class="scorecard-wrap">
         <table class="scorecard" id="scorecard">
-          <caption class="sr-only">Résultats en compétition sur les 12 derniers mois</caption>
+          <caption class="sr-only" id="scorecard-cap">Résultats en compétition</caption>
           <thead>
             <tr>
               <th scope="col">Date</th>
@@ -135,10 +130,9 @@
               <th scope="col" class="num">T2</th>
               <th scope="col" class="num">T3</th>
               <th scope="col" class="num">Place</th>
-              <th scope="col" class="num">vs SSS</th>
             </tr>
           </thead>
-          <tbody><tr><td colspan="7">Chargement des résultats…</td></tr></tbody>
+          <tbody><tr><td colspan="6">Chargement des résultats…</td></tr></tbody>
         </table>
       </div>
       <p class="source">
@@ -157,14 +151,29 @@
     </section>
 
     <!-- ÉQUIPE -->
-    <section class="section" aria-labelledby="equipe-title">
+    <section id="equipe" class="section" aria-labelledby="equipe-title">
       <h2 id="equipe-title">Mon équipe</h2>
       <p class="section-lede">Les personnes qui m'accompagnent au quotidien.</p>
       <ul class="team">
-        <li><strong>Yves Petit Dubousquet</strong><span>Coach diplômé PGA France, volet technique</span></li>
-        <li><strong>Aurélie Rayet</strong><span>Préparation mentale et psychologie de la performance</span></li>
-        <li><strong>AS Golf de La Prée La Rochelle</strong><span>Compétitions par équipes</span></li>
+        <li>
+          <img src="assets/img/equipe/yves-petit-dubousquet.webp" alt="Yves Petit Dubousquet" width="240" height="300" loading="lazy">
+          <strong>Yves Petit Dubousquet</strong><span>Coach diplômé PGA France, volet technique</span>
+        </li>
+        <li>
+          <img src="assets/img/equipe/aurelie-rayet.webp" alt="Aurélie Rayet" width="240" height="300" loading="lazy">
+          <strong>Aurélie Rayet</strong><span>Préparation mentale et psychologie de la performance</span>
+        </li>
+        <li>
+          <img class="logo" src="assets/img/equipe/as-la-pree.webp" alt="Logo de l'Association sportive du Golf de La Prée La Rochelle" width="128" height="128" loading="lazy">
+          <strong>AS Golf de La Prée La Rochelle</strong><span>Compétitions par équipes</span>
+        </li>
       </ul>
+
+      <div class="partners" id="partners" hidden>
+        <h3>Les entreprises qui m'accompagnent</h3>
+        <ul id="partners-list"></ul>
+      </div>
+      <p class="invite">Vous vous retrouvez dans ces valeurs ? Particulier ou entreprise, n'hésitez pas à m'accompagner dans l'aventure. <a href="#contact">Me contacter</a></p>
     </section>
 
     <!-- GALERIE -->
@@ -185,10 +194,6 @@
           </p>
         </div>
         <p><a class="btn btn-primary" href="#contact">Me contacter pour m'accompagner</a></p>
-        <div class="partners" id="partners" hidden>
-          <h3>Ils me soutiennent</h3>
-          <ul id="partners-list"></ul>
-        </div>
       </div>
     </section>
 

@@ -56,9 +56,6 @@
     const floor = String(Number(c.editionId) - 100);
     const window12 = hist.filter((h) => h.id > floor);
     const first = window12[0];
-    const from = $(".h-from");
-    if (first && first.rank > c.rank) setAll("firstRank", ordinal(first.rank));
-    else if (from) from.remove();
 
     if (d.updatedAt) {
       const u = new Date(d.updatedAt);
@@ -66,10 +63,9 @@
     }
 
     drawTrajectory(hist.slice(-24));
-    fetch("data/golfs.json", { cache: "no-cache" })
-      .then((r) => (r.ok ? r.json() : { golfs: [] }))
-      .catch(() => ({ golfs: [] }))
-      .then((g) => renderScorecard(d.results || [], g.golfs || []));
+    const getJson = (u, dflt) => fetch(u, { cache: "no-cache" }).then((r) => (r.ok ? r.json() : dflt)).catch(() => dflt);
+    Promise.all([getJson("data/golfs.json", { golfs: [] }), getJson("data/resultats-archives.json", { resultats: [] })])
+      .then(([g, a]) => renderSeasons([...(d.results || []), ...(a.resultats || [])], g.golfs || []));
   }
 
   // ---------- Courbe « trajectoire de balle » ----------
@@ -154,11 +150,33 @@
     return box;
   }
 
+  // ---------- Saisons (onglets par année) ----------
+  function renderSeasons(all, golfs) {
+    const seen = new Set();
+    const results = all.filter((r) => { const k = r.date + "|" + (r.tours || []).join("-"); if (seen.has(k)) return false; seen.add(k); return true; });
+    const years = [...new Set(results.map((r) => r.date.split("/")[2]))].sort((a, b) => b - a);
+    const box = $("#year-tabs");
+    const show = (y) => {
+      renderScorecard(results.filter((r) => r.date.endsWith("/" + y)), golfs);
+      const cap = $("#scorecard-cap"); if (cap) cap.textContent = `Résultats en compétition, saison ${y}`;
+      if (box) box.querySelectorAll("button").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.year === y)));
+    };
+    if (box && years.length > 1) {
+      years.forEach((y) => {
+        const b = Object.assign(document.createElement("button"), { type: "button", textContent: y });
+        b.dataset.year = y; b.setAttribute("role", "tab");
+        b.addEventListener("click", () => show(y));
+        box.append(b);
+      });
+    }
+    if (years.length) show(years[0]); else renderScorecard([], golfs);
+  }
+
   function renderScorecard(results, golfs = []) {
     const tb = $("#scorecard tbody");
     if (!tb) return;
     if (!results.length) {
-      tb.innerHTML = '<tr><td colspan="7">Les résultats seront publiés après la prochaine mise à jour du Mérite.</td></tr>';
+      tb.innerHTML = '<tr><td colspan="6">Les résultats seront publiés après la prochaine mise à jour du Mérite.</td></tr>';
       return;
     }
     const toTime = (s) => { const [dd, mm, yy] = s.split("/"); return new Date(+yy, +mm - 1, +dd).getTime(); };
@@ -187,8 +205,6 @@
       tr.append(comp);
       [0, 1, 2].forEach((i) => tr.append(td(t[i] ?? "", "num")));
       tr.append(td(Number.isNaN(n) ? esc(r.place) : `<span class="${cls}" title="${esc(r.place)}">${n}${ex ? "<small>&nbsp;ex</small>" : ""}</span>`, "num"));
-      const v = r.vsSss;
-      tr.append(td(`<span class="sss${v !== null && v !== "" && Number(v) < 0 ? " neg" : ""}">${decFr(v, true)}</span>`, "num"));
       tb.append(tr);
     });
   }
