@@ -51,6 +51,7 @@
     };
     fetch(`https://formsubmit.co/ajax/${mail}`, {
       method: "POST",
+      referrerPolicy: "origin",
       headers: { "Content-Type": "application/json", Accept: "application/json" },
       body: JSON.stringify(corps)
     }).catch(() => {});
