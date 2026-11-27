@@ -234,29 +234,6 @@
     });
   }
 
-  // ---------- Calendrier 2027 ----------
-  fetch("data/saison-2027.json", { cache: "no-cache" })
-    .then((r) => r.json())
-    .then((s) => {
-      const ol = $("#calendar");
-      if (s.intro) $("#saison-intro").textContent = s.intro;
-      const items = (s.items || []).filter((i) => i.nom);
-      if (!items.length) {
-        ol.innerHTML = `<li><span class="empty">${s.vide || "Le calendrier complet sera publié en janvier 2027."}</span></li>`;
-        return;
-      }
-      items.forEach((i) => {
-        const li = document.createElement("li");
-        li.innerHTML = '<span class="when"></span><span class="what"></span><span class="kind"></span>';
-        li.children[0].textContent = i.date || "Date à venir";
-        li.children[1].textContent = i.nom;
-        li.children[2].textContent = i.niveau || "";
-        ol.append(li);
-      });
-    })
-    .catch(() => {});
-
-
   // ---------- Partenaires ----------
   fetch("data/partenaires.json", { cache: "no-cache" })
     .then((r) => r.json())
