@@ -35,7 +35,7 @@
   // Alerte e-mail : chaque demande enregistrée est aussi envoyée à Tom par FormSubmit (gratuit, sans compte).
   // Le premier envoi déclenche un e-mail d'activation à confirmer une seule fois.
   function envoyerAlerte(p) {
-    const mail = cfg.CONTACT_EMAIL || "tommartin3344@gmail.com";
+    const mail = cfg.CONTACT_EMAIL || "tommartin.golf@gmail.com";
     const corps = {
       _subject: `Nouvelle demande sur ton site : ${p.nom}${p.entreprise ? " (" + p.entreprise + ")" : ""}`,
       _template: "box",
@@ -296,7 +296,7 @@
         form.reset();
         say("Message envoyé. Je vous réponds sous 48 heures.", "ok");
       } catch (err) {
-        const mail = cfg.CONTACT_EMAIL || "tommartin3344@gmail.com";
+        const mail = cfg.CONTACT_EMAIL || "tommartin.golf@gmail.com";
         say("", "err");
         status.innerHTML = `Le message n'a pas pu être envoyé. Écrivez-moi directement à <a href="mailto:${mail}?subject=${encodeURIComponent("Contact depuis le site")}">${mail}</a>.`;
       } finally {
