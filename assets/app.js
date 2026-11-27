@@ -257,29 +257,6 @@
     .catch(() => {});
 
 
-  // ---------- Galerie (data/galerie.json) ----------
-  fetch("data/galerie.json", { cache: "no-cache" })
-    .then((r) => r.json())
-    .then((g) => {
-      const items = (g.medias || []).filter((m) => m.fichier);
-      if (!items.length) return;
-      const box = $("#gallery");
-      items.forEach((m) => {
-        const fig = document.createElement("figure");
-        if (/\.(mp4|webm)$/i.test(m.fichier)) {
-          const v = Object.assign(document.createElement("video"), { src: m.fichier, controls: true, preload: "none", playsInline: true });
-          if (m.affiche) v.poster = m.affiche;
-          fig.append(v);
-        } else {
-          fig.append(Object.assign(document.createElement("img"), { src: m.fichier, alt: m.legende || "Tom Martin au golf", loading: "lazy" }));
-        }
-        if (m.legende) fig.append(Object.assign(document.createElement("figcaption"), { textContent: m.legende }));
-        box.append(fig);
-      });
-      $("#galerie").hidden = false;
-    })
-    .catch(() => {});
-
   // ---------- Partenaires ----------
   fetch("data/partenaires.json", { cache: "no-cache" })
     .then((r) => r.json())
